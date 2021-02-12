@@ -5,4 +5,4 @@
 
 Видео его функционала в действии:
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/wDu-_rDI_rU/maxresdefault.jpg?raw=true)](http://www.youtube.com/watch?v=wDu-_rDI_rU "Video Title")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/K_Zuz1isiFU/maxresdefault.jpg?raw=true)](http://www.youtube.com/watch?v=K_Zuz1isiFU "Video Title")
