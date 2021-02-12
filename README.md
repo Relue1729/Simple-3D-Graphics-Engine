@@ -6,9 +6,3 @@
 Видео его функционала в действии:
 
 [![Video](http://img.youtube.com/vi/K_Zuz1isiFU/maxresdefault.jpg)](http://www.youtube.com/watch?v=K_Zuz1isiFU "Simple 3D Graphics Engine")
-
-
-
-<div style="width: 800px; height: 720px; overflow: hidden">
-  <img src="http://img.youtube.com/vi/K_Zuz1isiFU/maxresdefault.jpg" width="800" height="720">
-</div>
