@@ -5,4 +5,4 @@
 
 Видео его функционала в действии:
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/K_Zuz1isiFU/maxresdefault.jpg?raw=true | width = 1000)](http://www.youtube.com/watch?v=K_Zuz1isiFU "Simple 3D Graphics Engine")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/K_Zuz1isiFU/maxresdefault.jpg | width = 1000)](http://www.youtube.com/watch?v=K_Zuz1isiFU "Simple 3D Graphics Engine")
