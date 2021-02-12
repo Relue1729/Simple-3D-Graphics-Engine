@@ -1,0 +1,41 @@
+﻿<Window x:Class="GraphicsEngine.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="3D Graphics Engine" Width="1280" Height="720"
+        MouseMove ="MouseMoveHandler">
+    <Grid Background="#FF3B4252">
+        <Image Name ="frontBuffer" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,-0.4,0" Stretch="UniformToFill"/>
+
+        <TextBlock Name ="Debug" FontSize="15" TextWrapping="Wrap" Text="Debug" Height="172" Width="244" Foreground="#D8DEE9" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,7,0,0"/>
+
+        <Button   Content="{Binding Controls[AddMesh],     FallbackValue='Add Mesh'}"     Click="AddMeshClick"     HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="28,63,0,0"  Background="#FFD8DEE9" Height="38" Foreground="#FF2E3440" BorderBrush="{x:Null}"/>
+        <Button   Content="{Binding Controls[ChangeMesh],  FallbackValue='Change Mesh'}"  Click="ChangeMeshClick"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="28,106,0,0" Background="#FFD8DEE9" Height="38" Foreground="#FF2E3440" BorderBrush="{x:Null}"/>
+        <Button   Content="{Binding Controls[RemoveMesh],  FallbackValue='Remove Mesh'}"  Click="RemoveMeshClick"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="28,149,0,0" Background="#FFD8DEE9" Height="38" Foreground="#FF2E3440" BorderBrush="{x:Null}"/>
+        <Button   Content="{Binding Controls[SelectMesh],  FallbackValue='Select Mesh'}"  Click="SelectMeshClick"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="28,192,0,0" Background="#FFD8DEE9" Height="38" Foreground="#FF2E3440" BorderBrush="{x:Null}"/>
+        <Button   Content="{Binding Controls[ChangeColor], FallbackValue='Change Color'}" Click="ChangeColorClick" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="28,235,0,0" Background="#FFD8DEE9" Height="38" Foreground="#FF2E3440" BorderBrush="{x:Null}"/>
+
+        <CheckBox Content="{Binding Controls[DisplayMesh],   FallbackValue=' Display Mesh'}"   Click="DisplayMeshClick"                              HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,327,0,0" BorderBrush="#FFD8DEE9" Background="#FF3B4252" Foreground="#FFD8DEE9" Height="32" Width="232" FontSize="20" FontFamily="Global Sans Serif"/>
+        <CheckBox Content="{Binding Controls[DisplayObject], FallbackValue=' Display Object'}" Click="DisplayModelClick" IsChecked ="True"           HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,359,0,0" BorderBrush="#FFD8DEE9" Background="#FF3B4252" Foreground="#FFD8DEE9" Height="30" Width="232" FontSize="20" FontFamily="Global Sans Serif"/>
+        <CheckBox Content="{Binding Controls[SolidColor],    FallbackValue=' Solid Color'}"    Click="SolidColorClick"                               HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,394,0,0" BorderBrush="#FFD8DEE9" Background="#FF3B4252" Foreground="#FFD8DEE9" Height="30" Width="232" FontSize="20" FontFamily="Global Sans Serif"/>
+        <CheckBox Content="{Binding Controls[SpinMesh],      FallbackValue=' Spin Mesh'}"      Click ="SpinMeshClick"    Name ="SpinMeshCheckbox"    HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,429,0,0" BorderBrush="#FFD8DEE9" Background="#FF3B4252" Foreground="#FFD8DEE9" Height="32" Width="232" FontSize="20" FontFamily="Global Sans Serif"/>
+
+        <StackPanel HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="314" Margin="28,488,0,0" Orientation="Horizontal">
+            <Label  Content="{Binding Controls[SpinX], FallbackValue='Spin X:'}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" Foreground="#FFD8DEE9" FontFamily="Global Sans Serif" FontSize="18" RenderTransformOrigin="0.612,-14.312"/>
+            <Slider Name ="XSlider"   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,5,0,0" Width="134" Foreground="Black" Background="{x:Null}" Maximum="0.2" SmallChange="0.02" RenderTransformOrigin="0.485,0.651"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="314" Margin="28,521,0,0" Orientation="Horizontal">
+            <Label  Content="{Binding Controls[SpinY], FallbackValue='Spin X:'}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" Foreground="#FFD8DEE9" FontFamily="Global Sans Serif" FontSize="18" RenderTransformOrigin="0.612,-14.312"/>
+            <Slider Name ="YSlider"   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,5,0,0" Width="134" Foreground="Black" Background="{x:Null}" Maximum="0.2" SmallChange="0.02" RenderTransformOrigin="0.485,0.651"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="314" Margin="28,554,0,0" Orientation="Horizontal">
+            <Label  Content="{Binding Controls[SpinZ], FallbackValue='Spin X:'}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" Foreground="#FFD8DEE9" FontFamily="Global Sans Serif" FontSize="18" RenderTransformOrigin="0.612,-14.312"/>
+            <Slider Name ="ZSlider"   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,5,0,0" Width="134" Foreground="Black" Background="{x:Null}" Maximum="0.2" SmallChange="0.02" RenderTransformOrigin="0.485,0.651"/>
+        </StackPanel>
+
+        <Button Content="RU/EN" Click="RuEnClick" HorizontalAlignment="Left" VerticalAlignment="Top" Width="51" Margin="1193,644,0,0" Background="#FFD8DEE9" Height="29" Foreground="#FF2E3440" BorderBrush="{x:Null}"/>
+
+    </Grid>
+</Window>

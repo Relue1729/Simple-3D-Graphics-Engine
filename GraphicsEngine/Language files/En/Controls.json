@@ -1,0 +1,14 @@
+{
+	"AddMesh":"Add Mesh",
+	"ChangeMesh":"Change Mesh",
+	"RemoveMesh":"Remove Mesh",
+	"SelectMesh":"Select Mesh",
+	"ChangeColor":"Change Color",
+	"DisplayMesh":" Display Mesh",
+	"DisplayObject":" Display Object",
+	"SolidColor":" Solid Color", 
+	"SpinMesh":" Spin Mesh", 
+	"SpinX":"Spin X:", 
+	"SpinY":"Spin Y:", 
+	"SpinZ":"Spin Z:"
+}
