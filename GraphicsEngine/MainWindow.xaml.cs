@@ -145,9 +145,9 @@ namespace GraphicsEngine
         
         void SpinMeshClick(object sender, RoutedEventArgs e)
         {
-            //Резкое падение FPS при обновлении переднего буфера через CompositionTarget.Rendering
-            //и единовременного контроля через MouseMove, так что во время контроля мышью
-            //обновление буфера только через MouseMove.
+          /*Резкое падение FPS при обновлении переднего буфера через CompositionTarget.Rendering
+            и единовременного контроля через MouseMove, так что во время контроля мышью
+            обновление буфера только через MouseMove.*/
             if ((bool) SpinMeshCheckbox.IsChecked)
             {
                 CompositionTarget.Rendering += SpinMeshRenderingHandler;
