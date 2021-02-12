@@ -9,6 +9,6 @@
 
 
 
-<div style="width: 1200px; height: 720px; overflow: hidden">
+<div style="width: 800px; height: 720px; overflow: hidden">
   <img src="http://img.youtube.com/vi/K_Zuz1isiFU/maxresdefault.jpg">
 </div>
