@@ -9,4 +9,6 @@
 
 
 
-<img src="http://img.youtube.com/vi/K_Zuz1isiFU/maxresdefault.jpg" width="1000">
+<div style="width: 1200px; height: 720px; overflow: hidden">
+  <img src="http://img.youtube.com/vi/K_Zuz1isiFU/maxresdefault.jpg">
+</div>
