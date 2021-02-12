@@ -9,4 +9,4 @@
 
 
 
-<img src="http://img.youtube.com/vi/K_Zuz1isiFU/maxresdefault.jpg" width="1000" height="800">
+<img src="http://img.youtube.com/vi/K_Zuz1isiFU/maxresdefault.jpg" width="1000">
