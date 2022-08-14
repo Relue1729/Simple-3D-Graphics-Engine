@@ -1,8 +1,8 @@
 # Simple-3D-Graphics-Engine
-Простой 3д-движок написанный на WPF с помощью SharpDX
+Simple WPF 3D Engine 
 
-Читает модели из JSON файлов, позволяет их перемещать/вращать/масштабировать мышью.
+Reads models from JSON files, allows to change their position/rotation/size with a mouse.
 
-Видео его функционала в действии:
+Video demonstration:
 
-[![Video](http://img.youtube.com/vi/K_Zuz1isiFU/maxresdefault.jpg)](http://www.youtube.com/watch?v=K_Zuz1isiFU "Simple 3D Graphics Engine")
+[![Video](http://img.youtube.com/vi/gxDiOZlhMqI/maxresdefault.jpg)](http://www.youtube.com/watch?v=gxDiOZlhMqI "Simple 3D Graphics Engine Demonstration")
