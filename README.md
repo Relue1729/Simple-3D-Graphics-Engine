@@ -1,6 +1,4 @@
 # Simple-3D-Graphics-Engine
-Simple WPF 3D Engine 
-
 Reads models from JSON files, allows to change their position/rotation/size with a mouse.
 
 Video demonstration:
